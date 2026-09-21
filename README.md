@@ -7,10 +7,13 @@ You can continue after a short countdown, which grants a timed pass for that sit
 
 ## Install (Dia, Chrome, or any Chromium browser)
 
-1. Open `chrome://extensions` (or the browser's equivalent) and enable Developer mode.
-2. Load unpacked, and select this folder.
-3. Click the extension icon to open settings and paste your token from https://readwise.io/access_token.
-4. Use "Test connection", then Save.
+1. Download the latest zip from [Releases](https://github.com/davejonesstl/reader-gate/releases) and unzip it (or clone this repo).
+2. Open `chrome://extensions` (or the browser's equivalent) and enable Developer mode.
+3. Load unpacked, and select the unzipped folder (the one containing `manifest.json`).
+4. Click the extension icon to open settings and paste your token from https://readwise.io/access_token.
+5. Use "Test connection", then Save.
+
+Unofficial; not affiliated with Readwise.
 
 The token is stored in `chrome.storage.local` only, never in the repo.
 
