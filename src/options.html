@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reader Gate settings</title>
+  <link rel="stylesheet" href="gate.css">
+  <style>
+    label { display: block; margin: 24px 0 6px; font-weight: 600; }
+    input, textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font: inherit; }
+    textarea { min-height: 120px; }
+    .hint { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+    .row { display: flex; gap: 10px; align-items: center; margin-top: 28px; }
+    #status { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Reader Gate</h1>
+
+    <label for="token">Readwise access token</label>
+    <input id="token" type="password" autocomplete="off" spellcheck="false">
+    <p class="hint">Get it at readwise.io/access_token. Stored only in this browser profile.</p>
+
+    <label for="sites">Gated sites</label>
+    <textarea id="sites" spellcheck="false"></textarea>
+    <p class="hint">One domain per line. Subdomains are included.</p>
+
+    <label for="pass">Pass length (minutes)</label>
+    <input id="pass" type="number" min="1" max="240">
+    <p class="hint">After you continue, that site isn't gated again for this long.</p>
+
+    <div class="row">
+      <button id="save" type="button">Save</button>
+      <button id="test" type="button">Test connection</button>
+      <span id="status" role="status"></span>
+    </div>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

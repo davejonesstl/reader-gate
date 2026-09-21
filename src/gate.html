@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold on</title>
+  <link rel="stylesheet" href="gate.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p id="count" class="eyebrow"></p>
+      <h1 id="heading">Hold on.</h1>
+      <p id="sub" class="sub">Before you go, look at what's already waiting in Reader.</p>
+    </header>
+
+    <p id="notice" class="notice" hidden></p>
+
+    <section id="finish" hidden>
+      <h2>Finish one of these</h2>
+      <ul class="cards"></ul>
+    </section>
+
+    <section id="start" hidden>
+      <h2>Or start one</h2>
+      <ul class="cards"></ul>
+    </section>
+
+    <p id="empty" class="sub" hidden>Nothing to show yet.</p>
+
+    <footer>
+      <button id="continue" type="button" disabled>Continue</button>
+    </footer>
+  </main>
+  <script type="module" src="gate.js"></script>
+</body>
+</html>
