@@ -24,3 +24,7 @@ The token is stored in `chrome.storage.local` only, never in the repo.
 ## Tests
 
 `npm test` runs the pure-logic tests (site matching, ranking, pass expiry) with Node's built-in runner.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
